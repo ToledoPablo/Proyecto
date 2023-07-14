@@ -39,6 +39,7 @@ a {
 .navbar-brand span {
     margin-left: .2rem;
 }
+
 /* TITULO */
 
 .titulo {
@@ -94,59 +95,29 @@ a {
     }
 }
 
-/* LIDER */ 
+/* LIDER */
 
-.lider_mg {
-    margin-bottom: 3rem;
-}
 
-.lider__texto {
-    text-align: center;
-    margin-bottom: 3rem;
-}
 
-.lider__texto p {
-    margin-bottom: 2rem;
-}
-
-.lider__texto a {
+.lider-btn {
     background-color: var(--negro);
     color: var(--blanco);
     padding: 0.7rem 1rem;
 }
 
-.img-wd img {
-    width: 100%;
-    height: 100%;
-}
-
 @media screen and ( min-width: 769px) {
-    .lider__texto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        text-align: start;
-    }
+
     .img-wd {
         order: -1;
     }
 
-    .lider__texto a:hover {
+    .lider-btn:hover {
         background-color: var(--marron);
         transition: 400ms;
     }
 }
 
 /* ELECCION */
-
-.eleccion {
-    text-align: center;
-}
-
-.eleccion p {
-    margin-bottom: 2rem;
-}
 
 .color-h3 {
     color: var(--marron);
@@ -170,11 +141,7 @@ a {
 
 /* SERVICIOS */ 
 
-.servicios {
-    text-align: center;
-    margin-bottom: 6rem;
-}
-
+/* Dejo esta parte del css basico para poder anidarlo con sass */
 .servicios__flex {
     display: flex;
     flex-direction: column;
@@ -232,7 +199,6 @@ a {
 }
 
 .servicios__btn a {
-    text-decoration: none;
     color: var(--blanco);
     background-color: var(--negro);
     padding: 0.7rem 1rem;
@@ -268,15 +234,14 @@ a {
     }
 }
 
+/* Dejo esta parte del css basico para poder anidarlo con sass */
+
 /* CLIENTES */
 
-.clientes {
-    text-align: center;
-}
+
  
-.clientes-mg {
-    margin-bottom: 3rem;
-}
+
+
 .clientes img {
     margin-bottom: 2rem;
     margin-top: 2rem;
