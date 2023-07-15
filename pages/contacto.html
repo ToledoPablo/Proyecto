@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand d-flex justify-content-center align-items-baseline" href="../index.html">
                     <img src="../assets/img/casa.png" alt="logo casa">
                     <span>Remodelacion K&T</span>
@@ -45,74 +45,77 @@
         </nav>
     </header>
 
-    <main>
-        <section class="form_bg">
-            <div class="formulario">
-                <div class="formulario__texto">
+    <main class="container">
+        <section class="contacto-bg mb-5 mt-5">
+            <div class="contacto">
+                <div class="contacto__texto">
                     <h2>Cuéntanos tu proyecto</h2>
                     <p>Llena el formulario o llámanos para una consulta a domicilio.</p>
                 </div>
-                <form class="formulario__form">
-                    <div class="formulario__form__flex">
+                <form class="contacto__form">
+                    <div class="contacto__form__flex">
                         <div class="column mitad">
                             <label for="nombre">Nombre *</label>
-                            <input class="input" type="text" id="nombre" required>
+                            <input class="input ct-input" type="text" id="nombre" required>
                         </div>
 
                         <div class="column mitad">
                             <label for="apellido">Apellido *</label>
-                            <input class="input" type="text" id="apellido" required>
+                            <input class="input ct-input" type="text" id="apellido" required>
                         </div>
                     </div>
-                    <div class="formulario__form__flex">
+                    <div class="contacto__form__flex">
                         <div class="column mitad">
                             <label for="email">Email *</label>
-                            <input class="input" type="email" id="email" required>
+                            <input class="input ct-input" type="email" id="email" required>
                         </div>
                         <div class="column mitad">
                             <label for="telefono">Telefono</label>
-                            <input class="input" type="tel" id="telefono">
+                            <input class="input ct-input" type="tel" id="telefono">
                         </div>
                     </div>
 
                     <div class="column">
                         <label for="direccion">Dirección</label>
-                        <input class="input" type="text" id="direccion">
+                        <input class="input ct-input" type="text" id="direccion">
                     </div>
 
                     <div class="column">
                         <label for="asunto">Asunto</label>
-                        <input class="input" type="text" id="asunto">
+                        <input class="input ct-input" type="text" id="asunto">
                     </div>
 
                     <div class="column">
                         <label for="mensaje">Escribe tu mensaje aqui...</label>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="7"></textarea>
+                        <textarea class="textarea" name="mensaje" id="mensaje" cols="30" rows="7"></textarea>
                     </div>
 
                     <div class="column">
-                        <input class="enviar__btn" type="submit">
+                        <input class="contacto__btn" type="submit">
                     </div>
                 </form>
             </div>
-        </section>
+        </section>    
     </main>
 
 
-    <footer class="footer">
-        <div class="footer__enlaces">
-            <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png"
-                    alt="logo facebook" loading="lazy"></a>
+
+    <footer class="container  d-flex  flex-column justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-center gap-4 my-3">
+            <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png" alt="logo facebook"
+                    loading="lazy"></a>
             <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.png"
                     alt="logo instagram" loading="lazy"></a>
             <a href="https://twitter.com/" target="_blank"><img src="../assets/img/twitter.png" alt="icono twitter"
                     loading="lazy"></a>
         </div>
-        <div class="footer__texto">
+        <div>
             <a href="https://outlook.live.com/" target="_blank"><span>RemodelacionK&T@correo.com</span></a>
             <p>Todos los derechos reservados</p>
         </div>
     </footer>
+
+
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 

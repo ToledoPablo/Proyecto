@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remodelacion K&T | Trabajos</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"> 
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header>
+    <header class="sticky">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand d-flex justify-content-center align-items-baseline" href="../index.html">
                     <img src="../assets/img/casa.png" alt="logo casa">
                     <span>Remodelacion K&T</span>
@@ -45,61 +45,54 @@
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main class="container">
+        <section class="text-center">
             <h2>Nuestro Trabajo</h2>
             <p>A continuación te invitamos a ver algunos proyectos realizados recientemente.</p>
         </section> <!-- Titulo -->
 
-        <section>
-            <div>
-                <a href="../pages/cocinas.html">
-                    <img src="../assets/img/acercade_2.webp" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="../pages/bath.html">
-                    <img src="../assets/img/acercade_3.webp" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="../pages/interiores.html">
-                    <img src="../assets/img/acercade_3.webp" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="../pages/exteriores.html">
-                    <img src="../assets/img/acercade_3.webp" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="../pages/ampliaciones.html">
-                    <img src="../assets/img/acercade_3.webp" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="../pages/terrazas.html">
-                    <img src="../assets/img/acercade_3.webp" alt="">
-                </a>
-            </div>
-        </section> <!-- Galeria -->
+
+        <section class="galeria">
+            <a href="../pages/cocinas.html" class="galeria_imagenes cocina galeria_imagenes--g1">
+                <img src="../assets/img/baño_640.jpg" alt="" class="galeria_img">
+            </a>
+            <a href="../pages/bath.html" class="galeria_imagenes baños galeria_imagenes--g2">
+                <img src="../assets/img/cocina1_640.jpg" alt="" class="galeria_img">
+            </a>
+            <a href="../pages/interiores.html" class="galeria_imagenes interiores galeria_imagenes--g3">
+                <img src="../assets/img/cocina_640.jpg" alt="" class="galeria_img">
+            </a>
+            <a href="../pages/ampliaciones.html" class="galeria_imagenes ampliaciones galeria_imagenes--g4">
+                <img src="img/galeria2.jpg" alt="" class="galeria_img">
+            </a>
+            <a href="../pages/exteriores.html" class="galeria_imagenes exteriores galeria_imagenes--g5">
+                <img src="img/galeria2.jpg" alt="" class="galeria_img">
+            </a>
+            <a href="../pages/terrazas.html" class="galeria_imagenes terrazas galeria_imagenes--g6">
+                <img src="img/galeria2.jpg" alt="" class="galeria_img">
+            </a>
+        </section>
 
         <section class="banner">
-            <h2>Crea la casa de tus sueños. Contanos tu proyecto hoy</h2>
-            <a href="../pages/contacto.html">Presupuesto sin costo</a>
-        </section> <!-- Contacto -->
+            <div class="w-75 d-flex flex-column justify-content-center align-items-center text-center banner__contenido">
+                <h2>Crea la casa de tus sueños. 
+                <br>
+                Contanos tu proyecto hoy</h2>
+                <a href="../pages/contacto.html">Presupuesto sin costo</a>
+            </div>
+        </section> <!-- Banner -->  
     </main>
 
-    <footer class="footer">
-        <div class="footer__enlaces">
-            <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png"
-                    alt="logo facebook" loading="lazy"></a>
+    <footer class="container  d-flex  flex-column justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-center gap-4 my-3">
+            <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png" alt="logo facebook"
+                    loading="lazy"></a>
             <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.png"
                     alt="logo instagram" loading="lazy"></a>
             <a href="https://twitter.com/" target="_blank"><img src="../assets/img/twitter.png" alt="icono twitter"
                     loading="lazy"></a>
         </div>
-        <div class="footer__texto">
+        <div>
             <a href="https://outlook.live.com/" target="_blank"><span>RemodelacionK&T@correo.com</span></a>
             <p>Todos los derechos reservados</p>
         </div>
