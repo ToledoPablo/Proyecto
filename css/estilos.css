@@ -31,6 +31,9 @@ a {
     background-color: var(--gris);
 }
 
+.centrado {
+    margin: 0 auto;
+}
 
 
 /* HEADER */ 
@@ -291,7 +294,7 @@ a {
     flex-direction: column;
 }
 
-.column label {
+.lb-index {
     color: var(--blanco);
     font-weight: 100;
 }
@@ -408,18 +411,19 @@ a {
 
 
 /* Trabajos */
-
 .galeria{
-    padding-bottom : 3em;
-    padding-top: 1em;
-    display:grid;
-    grid-template-columns: repeat(3 , 1fr);
-    grid-auto-rows: 400px;
-    grid-template-areas: 
-    'img1 img2 img3'
-    'img4 img5 img6';    
-    gap : 0.8em;
-} 
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'img1'
+    'img2'
+    'img3'
+    'img4'
+    'img5'
+    'img6';    
+}
+.galeria_imagenes::before{
+    font-size: 1rem;
+}
 
 .galeria_imagenes{
     position:relative;
@@ -476,20 +480,37 @@ a {
     object-fit: cover;
 }
 
-@media (max-width:768px){
+.img1 {
+    grid-area: img1;
+}
+.img2 {
+    grid-area: img2;
+}
+.img3 {
+    grid-area: img3;
+}
+.img4 {
+    grid-area: img4;
+}
+.img5 {
+    grid-area: img5;
+}
+.img6 {
+    grid-area: img6;
+}
+
+@media (min-width:768px){
     .galeria{
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        'img1'
-        'img2'
-        'img3'
-        'img4'
-        'img5'
-        'img6';    
-    }
-    .galeria_imagenes::before{
-        font-size: 1rem;
-    }
+        padding-bottom : 3em;
+        padding-top: 1em;
+        display:grid;
+        grid-template-columns: repeat(3 , 1fr);
+        grid-auto-rows: 400px;
+        grid-template-areas: 
+        'img1 img2 img3'
+        'img4 img5 img6';    
+        gap : 0.8em;
+    }     
 }
 
 /* Contacto */
@@ -525,7 +546,7 @@ a {
     flex-direction: column;
 }
 
-.column label {
+.colum label.label {
     color: var(--negro);
     font-weight: 300;
 }
@@ -593,3 +614,20 @@ a {
     }
 }  
 
+/* Galerias */
+
+.galeriaGral{
+    padding-bottom : 3em;
+    padding-top: 1em;
+    display:grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-auto-rows: 500px;
+    grid-template-areas: 
+    'img1 img2 img3'
+    'img4 img5 img6';    
+    gap : 0.8em;
+} 
+
+.bg-servicios {
+    background-color: var(--gris);
+}

@@ -13,7 +13,7 @@
 <body>
     <header class="sticky">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand d-flex justify-content-center align-items-baseline" href="../index.html">
                     <img src="../assets/img/casa.png" alt="logo casa">
                     <span>Remodelacion K&T</span>
@@ -29,7 +29,7 @@
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Acerca de</a>
+                            <a class="nav-link" href="./acerca_de.html">Acerca de</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./servicios.html">Servicios</a>
@@ -45,43 +45,61 @@
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main class="container">
+        <section class="text-center mt-5 mb-5">
             <h1>Ampliaciones</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi quas soluta atque amet. Velit
-                voluptatibus porro commodi voluptatum vero corrupti, praesentium fugiat eos quia, quisquam voluptas qui
-                itaque consequuntur?</p>
+            <p class="w-75 centrado mt-3">
+                ¡Bienvenidos a nuestra galería de ampliaciones! Aquí encontrarán una colección de proyectos donde hemos llevado a cabo ampliaciones arquitectónicas, transformando espacios existentes en áreas amplias y funcionales. 
+            </p>
         </section> <!-- Titulo -->
 
-        <div>
-            <img src="../assets/img/acercade_5.webp" alt="">
-            <img src="../assets/img/acercade_5.webp" alt="">
-            <img src="../assets/img/acercade_5.webp" alt="">
-            <img src="../assets/img/acercade_5.webp" alt="">
-            <img src="../assets/img/acercade_5.webp" alt="">
-            <img src="../assets/img/acercade_5.webp" alt="">
-        </div>
+        <section class="galeria">
+            <div class="img1">
+                <img src="../assets/img/ampliacion_1_g.jpg" alt="casa moderna" class="galeria_img">
+            </div>
+            <div class="img2">
+                <img src="../assets/img/ampliacion_2.jpg" alt="habitacion con sillones" class="galeria_img">
+            </div>
+            <div class="img3">
+                <img src="../assets/img/ampliacion_3.jpg" alt="casa con jardin" class="galeria_img">
+            </div>
+            <div class="img4">
+                <img src="../assets/img/ampliacion_4.jpg" alt="cochera" class="galeria_img">
+            </div>
+            <div href="../pages/exteriores.html"class="img5">
+                <img src="../assets/img/ampliacion_5.jpg" alt="casa con cochera" class="galeria_img">
+            </div>
+            <div class="img6">
+                <img src="../assets/img/ampliacion_6.jpg" alt="habitacion decorada" class="galeria_img">
+            </div>
+        </section> 
+        <!-- Galeria -->
 
         <section class="banner">
-            <h2>Crea la casa de tus sueños. Contanos tu proyecto hoy</h2>
-            <a href="../pages/contacto.html">Presupuesto sin costo</a>
-        </section> <!-- Contacto -->
+            <div class="w-75 d-flex flex-column justify-content-center align-items-center text-center banner__contenido">
+                <h2>Crea la casa de tus sueños. 
+                <br>
+                Contanos tu proyecto hoy</h2>
+                <a href="../pages/contacto.html">Presupuesto sin costo</a>
+            </div>
+        </section> <!-- Contacto -->      
     </main>
 
-    <footer class="footer">
-        <div class="footer__enlaces">
-            <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png"
-                    alt="logo facebook" loading="lazy"></a>
+    <footer class="container  d-flex  flex-column justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-center gap-4 my-3">
+            <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png" alt="logo facebook"
+                    loading="lazy"></a>
             <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.png"
                     alt="logo instagram" loading="lazy"></a>
             <a href="https://twitter.com/" target="_blank"><img src="../assets/img/twitter.png" alt="icono twitter"
                     loading="lazy"></a>
         </div>
-        <div class="footer__texto">
+        <div>
             <a href="https://outlook.live.com/" target="_blank"><span>RemodelacionK&T@correo.com</span></a>
             <p>Todos los derechos reservados</p>
         </div>
     </footer>
+
     <script src="../js/bootstrap.bundle.min.js"></script>
 
 </body>
