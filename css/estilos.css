@@ -431,48 +431,7 @@ a {
     overflow: hidden;
 }
 
-.galeria_imagenes::before{
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background-color: var(--grisDos);
-    transform: scaleY(0);
-    transition: transform .4s;
-    color:white;
-    display:flex;
-    justify-content: center;
-    align-items:center ;
-    font-size:1.5rem ;    
-}
 
-.galeria_imagenes:hover::before{
-    transform: scaleY(1);
-}
-
-.cocina.galeria_imagenes::before{
-    content: "cocina";
-}
-.baños.galeria_imagenes::before {
-    content: "Baños";
-}
-
-.interiores.galeria_imagenes::before {
-    content: "Interiores"
-}
-
-.ampliaciones.galeria_imagenes::before{
-    content:"Ampliaciones";
-}
-
-.exteriores.galeria_imagenes::before {
-    content: "Exteriores";
-}
-
-.terrazas.galeria_imagenes::before {
-    content: "Terrazas";
-}
 
 .galeria_img{
     width: 100%;
@@ -511,6 +470,49 @@ a {
         'img4 img5 img6';    
         gap : 0.8em;
     }     
+
+    .galeria_imagenes::before{
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background-color: var(--grisDos);
+        transform: scaleY(0);
+        transition: transform .4s;
+        color:white;
+        display:flex;
+        justify-content: center;
+        align-items:center ;
+        font-size:1.5rem ;    
+    }
+    
+    .galeria_imagenes:hover::before{
+        transform: scaleY(1);
+    }
+    
+    .cocina.galeria_imagenes::before{
+        content: "cocina";
+    }
+    .baños.galeria_imagenes::before {
+        content: "Baños";
+    }
+    
+    .interiores.galeria_imagenes::before {
+        content: "Interiores"
+    }
+    
+    .ampliaciones.galeria_imagenes::before{
+        content:"Ampliaciones";
+    }
+    
+    .exteriores.galeria_imagenes::before {
+        content: "Exteriores";
+    }
+    
+    .terrazas.galeria_imagenes::before {
+        content: "Terrazas";
+    }
 }
 
 /* Contacto */
