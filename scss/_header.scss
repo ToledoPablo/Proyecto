@@ -1,0 +1,15 @@
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: $blanco;
+}
+.navbar {
+    padding: 1.5rem;
+}
+
+.navbar-brand {
+    span {
+    margin-left: .2rem;
+    }
+}

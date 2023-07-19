@@ -1,0 +1,103 @@
+
+
+.contacto-bg {
+    background-color: $blanco;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin:0 auto;
+
+    h2 {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    .contacto__texto h2, 
+    .contacto__texto p {
+        color: $negro;
+    }
+
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+
+    .label {
+    color: $negro;
+    font-weight: 300;
+    }
+
+    .ct-input {
+        background-color: $blanco;
+        border: none;
+        border-bottom: 1px solid $negro;
+        outline: none;
+        color: $negro;
+        font-family: $fuente;
+        font-size: 1rem;
+        padding: .5rem;
+        font-weight: 300;
+    }
+
+    .textarea {
+        background-color: $blanco;
+        color: $negro;
+        border: none;
+        outline: none;
+        resize: none;
+        border-bottom: 1px solid $negro; 
+        font-size: 1rem;   
+        font-family: $fuente;
+        font-weight: 300;
+    } 
+
+    .contacto__btn {
+        background-color: $negro;
+        color: $blanco;
+        padding: .5rem;
+        margin-top: 1.5rem;
+        font-weight: 400;
+        font-family: $fuente;
+    }
+}
+
+@media (min-width:769px){ 
+
+    .contacto {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+
+        .contacto__texto {
+            color: $negro;
+            width: 50%;
+        }
+
+        .contacto__form {
+            width:50% ;
+            margin-left: 5rem;
+
+            .contacto__form__flex {
+                display: flex; 
+                column-gap: 1.5rem; 
+            }
+        }
+    }       
+    
+    .mitad {
+        width: 50%;
+    }
+}  

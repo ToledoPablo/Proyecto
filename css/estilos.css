@@ -1,635 +1,543 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
-
-/* Globales */
-:root {
-    --blanco: #f5f5f5;
-    --gris: #e2dfdf;
-    --grisDos: #9e9e9ea6;
-    --negro: #222121;
-    --marron: #a26028;
-    --fuente:'Poppins', sans-serif; 
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--blanco);
-    font-family: var(--fuente);
+  background-color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
 }
+
 h2 {
-    font-size: 2rem;
-    font-weight: 600; 
-    margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
+
 a {
-    text-decoration: none;
-    color: var(--negro);
+  text-decoration: none;
+  color: #222121;
 }
-
-/* Utilitarios */
-
 
 .bg {
-    background-color: var(--gris);
+  background-color: #e2dfdf;
 }
 
 .centrado {
-    margin: 0 auto;
+  margin: 0 auto;
 }
-
-
-/* HEADER */ 
-
-.sticky {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background-color: var(--blanco);
-}
-.navbar {
-    padding: 1.5rem;
-}
-
-.navbar-brand span {
-    margin-left: .2rem;
-}
-
-/* TITULO */
-
-
-/* Dejo esta parte del css basico para poder anidarlo con sass */
-.titulo {
-    height: 50vh;
-    background-image: url(../assets/img/main_640.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-bottom: 3rem;
-}
-
-.titulo h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    line-height: 1.3;
-}
-
-.titulo__contenido {
-    position: absolute;
-    background-color: rgba(0,0,0,.3);
-    width: 100%;
-    height: 100%;
-    color: var(--blanco);
-    text-align: center;
-    line-height: 4.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.titulo__contenido a span {
-    text-decoration: none;
-    color: var(--negro);
-    background-color: var(--blanco);
-    padding: 0.7rem 1rem;
-}
-
-@media screen and ( min-width:769px )  {
-    .titulo {
-        height: 90vh;
-        background-image: url(../assets/img/main_1920.jpg);
-    }
-
-    .titulo h1 {
-        font-size: 4rem;
-    }
-
-    .titulo__contenido {
-        align-items: flex-start;
-        text-align: start;
-        padding-left: 3rem;
-    }
-}
-
-/* Dejo esta parte del css basico para poder anidarlo con sass */
-
-
-
-/* LIDER */
-
-
-
-.lider-btn {
-    background-color: var(--negro);
-    color: var(--blanco);
-    padding: 0.7rem 1rem;
-}
-
-@media screen and ( min-width: 769px) {
-
-    .img-wd {
-        order: -1;
-    }
-
-    .lider-btn:hover {
-        background-color: var(--marron);
-        transition: 400ms;
-    }
-}
-
-/* ELECCION */
-
-.color-h3 {
-    color: var(--marron);
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-@media screen and (min-width: 769px) {
-    .eleccion {
-        margin-bottom: 3rem;
-    }
-
-    .eleccion h2 {
-        margin-bottom: 4rem;
-    }
-
-    .eleccion h3 {
-        margin-bottom: 3rem;
-    }
-}
-
-/* SERVICIOS */ 
-
-/* Dejo esta parte del css basico para poder anidarlo con sass */
-.servicios__flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3rem;
-}
-
-.servicios__flex__contenedor {
-    height: 30vh;
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0.5rem;
-}
-
-.servicios__flex__contenedor a {
-    text-decoration: none;
-    color: var(--blanco);
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.cocina {
-    background-image: url(../assets/img/cocina1_640.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.bath {
-    background-image: url(../assets/img/baño_640.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.interiores {
-    background-image: url(../assets/img/interiores_640.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.servicios__flex__contenedor__anclas {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: rgba(0, 0, 0, .4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.servicios__btn a {
-    color: var(--blanco);
-    background-color: var(--negro);
-    padding: 0.7rem 1rem;
-}
-
-@media screen and (min-width:769px){ 
-
-    .servicios__flex {
-        flex-direction: row;
-        margin-bottom:4rem;
-    }
-
-    .servicios__flex__contenedor {
-        height: 70vh;
-        margin: 0.2rem;
-    }
-
-    .cocina {
-        background-image: url(../assets/img/cocina1_1920.jpg);
-    }
-
-    .bath {
-        background-image: url(../assets/img/baño_1920.jpg);
-    }
-
-    .interiores {
-        background-image: url(../assets/img/interiores_1920.jpg);
-    }
-
-    .servicios__btn a:hover {
-        background-color: var(--marron);
-        transition: 400ms ;
-    }
-}
-
-/* Dejo esta parte del css basico para poder anidarlo con sass */
-
-/* CLIENTES */
-
-.nombreCliente {
-    color: var(--marron);
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-
-/* FORMULARIO */
-.form_bg {
-    background-color: var(--negro);
-    padding: 3rem 0;
-    margin-bottom: 2rem;
-}
-
-.formulario {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin:0 auto;
-}
-
-.formulario__texto h2, .formulario__texto p {
-    color: var(--blanco);
-}
-
-.formulario h2 {
-    margin-bottom: 2rem;
-    font-size: 3rem;
-}
-
-.formulario p {
-    margin-bottom: 2rem;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-}
-
-.lb-index {
-    color: var(--blanco);
-    font-weight: 100;
-}
-
-.column input {
-    background-color: var(--negro);
-    border: none;
-    border-bottom: 1px solid var(--blanco);
-    outline: none;
-    color: var(--blanco);
-    font-family: var(--fuente);
-    font-size: 1rem;
-    padding: .5rem;
-    font-weight: 300;
-}
-
-.column textarea {
-    background-color: var(--negro);
-    color: var(--blanco);
-    border: none;
-    outline: none;
-    resize: none;
-    border-bottom: 1px solid var(--blanco); 
-    font-size: 1rem;   
-    font-family: var(--fuente);
-    font-weight: 300;
-} 
-
-.column .enviar__btn {
-    background-color: var(--blanco);
-    color: var(--negro);
-    padding: .5rem;
-    margin-top: 1.5rem;
-    font-weight: 400;
-    font-family: var(--fuente);
-}
-
-@media (min-width:769px){ 
-
-    .formulario {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        margin: 0 auto;
-    }   
-
-    .formulario__texto {
-        color: var(--blanco);
-        width: 50%;
-    }
-    
-    .formulario__form {
-        width:50% ;
-        margin-left: 5rem;
-    }
-    
-    .formulario__form__flex {
-        display: flex; 
-        column-gap: 1.5rem; 
-    }
-       
-    .mitad {
-        width: 50%;
-    }
-}  
-
 
 /* BANNER */
-
 .banner {
-    background-color: var(--negro);
-    color: var(--blanco);
+  background-color: #222121;
+  color: #f5f5f5;
 }
 
 .banner__contenido {
-    margin: 0 auto;
-    height: 30vh;
+  margin: 0 auto;
+  height: 30vh;
 }
-
 .banner__contenido h2 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
-
 .banner__contenido a {
-    color: var(--negro);
-    background-color: var(--blanco);
-    padding: 0.7rem 1rem;;
+  color: #222121;
+  background-color: #f5f5f5;
 }
 
 @media screen and (min-width: 769px) {
-    .banner__contenido h2 {
-        font-size: 2rem;
-    }
+  .banner__contenido h2 {
+    font-size: 2rem;
+  }
+}
+.bg-servicios {
+  background-color: var(--gris);
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #f5f5f5;
+}
 
+.navbar {
+  padding: 1.5rem;
+}
 
+.navbar-brand span {
+  margin-left: 0.2rem;
+}
 
+/* Titulo */
+.titulo {
+  height: 50vh;
+  background-image: url(../assets/img/main_640.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 3rem;
+}
+.titulo h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.titulo .titulo__contenido {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  color: #f5f5f5;
+  text-align: center;
+  line-height: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titulo .titulo__contenido span {
+  text-decoration: none;
+  color: #222121;
+  background-color: #f5f5f5;
+  padding: 0.7rem 1rem;
+}
+
+@media screen and (min-width: 769px) {
+  .titulo {
+    height: 90vh;
+    background-image: url(../assets/img/main_1920.jpg);
+  }
+  .titulo h1 {
+    font-size: 4rem;
+  }
+  .titulo .titulo__contenido {
+    align-items: flex-start;
+    text-align: start;
+    padding-left: 3rem;
+  }
+}
+/* Lider */
+.boton, .servicios__btn a, .banner__contenido a {
+  background-color: #222121;
+  color: #f5f5f5;
+  padding: 0.7rem 1rem;
+}
+
+@media screen and (min-width: 769px) {
+  .img-wd {
+    order: -1;
+  }
+  .boton:hover, .servicios__btn a:hover, .banner__contenido a:hover {
+    background-color: #a26028;
+    transition: 400ms;
+  }
+}
+/* Eleccion */
+.color-h3 {
+  color: #a26028;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 769px) {
+  .eleccion {
+    margin-bottom: 3rem;
+  }
+  .eleccion h2 {
+    margin-bottom: 4rem;
+  }
+  .eleccion h3 {
+    margin-bottom: 3rem;
+  }
+}
 /* Servicios */
-
-.card {
-    border: none;
-    border-radius: 0;
+.servicios__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.servicios__flex .servicios__flex__contenedor {
+  height: 30vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.servicios__flex .servicios__flex__contenedor a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.servicios__flex .servicios__flex__contenedor .servicios__flex__contenedor__anclas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-img-top {
-    border-radius: 0;
+.cocina {
+  background-image: url(../assets/img/cocina1_640.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.bg-card {
-    background-color: var(--blanco);
+.bath {
+  background-image: url(../assets/img/baño_640.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-
-/* Trabajos */
-.galeria{
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    'img1'
-    'img2'
-    'img3'
-    'img4'
-    'img5'
-    'img6';    
-}
-.galeria_imagenes::before{
-    font-size: 1rem;
+.interiores {
+  background-image: url(../assets/img/interiores_640.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.galeria_imagenes{
-    position:relative;
-    cursor:pointer;
-    overflow: hidden;
+.servicios__btn a {
+  color: #f5f5f5;
+  background-color: #222121;
 }
 
-
-
-.galeria_img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+@media screen and (min-width: 769px) {
+  .servicios__flex {
+    flex-direction: row;
+    margin-bottom: 4rem;
+  }
+  .servicios__flex .servicios__flex__contenedor {
+    height: 70vh;
+    margin: 0.2rem;
+  }
+  .cocina {
+    background-image: url(../assets/img/cocina1_1920.jpg);
+  }
+  .bath {
+    background-image: url(../assets/img/baño_1920.jpg);
+  }
+  .interiores {
+    background-image: url(../assets/img/interiores_1920.jpg);
+  }
+  .servicios__btn a:hover {
+    background-color: #a26028;
+    transition: 400ms;
+  }
+}
+/* Clientes */
+.nombreCliente {
+  color: #a26028;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
-.img1 {
-    grid-area: img1;
-}
-.img2 {
-    grid-area: img2;
-}
-.img3 {
-    grid-area: img3;
-}
-.img4 {
-    grid-area: img4;
-}
-.img5 {
-    grid-area: img5;
-}
-.img6 {
-    grid-area: img6;
+/*Formulario */
+.form_bg {
+  background-color: #222121;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
 }
 
-@media (min-width:768px){
-    .galeria{
-        padding-bottom : 3em;
-        padding-top: 1em;
-        display:grid;
-        grid-template-columns: repeat(3 , 1fr);
-        grid-auto-rows: 400px;
-        grid-template-areas: 
-        'img1 img2 img3'
-        'img4 img5 img6';    
-        gap : 0.8em;
-    }     
-
-    .galeria_imagenes::before{
-        position:absolute;
-        top:0;
-        bottom:0;
-        left:0;
-        right:0;
-        background-color: var(--grisDos);
-        transform: scaleY(0);
-        transition: transform .4s;
-        color:white;
-        display:flex;
-        justify-content: center;
-        align-items:center ;
-        font-size:1.5rem ;    
-    }
-    
-    .galeria_imagenes:hover::before{
-        transform: scaleY(1);
-    }
-    
-    .cocina.galeria_imagenes::before{
-        content: "cocina";
-    }
-    .baños.galeria_imagenes::before {
-        content: "Baños";
-    }
-    
-    .interiores.galeria_imagenes::before {
-        content: "Interiores"
-    }
-    
-    .ampliaciones.galeria_imagenes::before{
-        content:"Ampliaciones";
-    }
-    
-    .exteriores.galeria_imagenes::before {
-        content: "Exteriores";
-    }
-    
-    .terrazas.galeria_imagenes::before {
-        content: "Terrazas";
-    }
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
 }
-
-/* Contacto */
-
-.contacto-bg {
-    background-color: var(--blanco);
-    padding: 3rem 0;
-    margin-bottom: 2rem;
+.formulario h2 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
 }
-
-.contacto {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin:0 auto;
+.formulario p {
+  margin-bottom: 2rem;
 }
-
-.contacto__texto h2, .contacto__texto p {
-    color: var(--negro);
-}
-
-.contacto h2 {
-    margin-bottom: 2rem;
-    font-size: 3rem;
-}
-
-.contacto p {
-    margin-bottom: 2rem;
+.formulario .formulario__texto h2, .formulario .formulario__texto p {
+  color: #f5f5f5;
 }
 
 .column {
+  display: flex;
+  flex-direction: column;
+}
+.column input {
+  background-color: #222121;
+  border: none;
+  border-bottom: 1px solid #f5f5f5;
+  outline: none;
+  color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem;
+  font-weight: 300;
+}
+.column textarea {
+  background-color: #222121;
+  color: #f5f5f5;
+  border: none;
+  outline: none;
+  resize: none;
+  border-bottom: 1px solid #f5f5f5;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.column .enviar__btn {
+  background-color: #f5f5f5;
+  color: #222121;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.lb-index {
+  color: #f5f5f5;
+  font-weight: 100;
+}
+
+@media (min-width: 769px) {
+  .formulario {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .formulario .formulario__texto {
+    color: #f5f5f5;
+    width: 50%;
+  }
+  .formulario .formulario__form {
+    width: 50%;
+    margin-left: 5rem;
+  }
+  .formulario .formulario__form .formulario__form__flex {
     display: flex;
-    flex-direction: column;
+    column-gap: 1.5rem;
+  }
+  .mitad {
+    width: 50%;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.colum label.label {
-    color: var(--negro);
-    font-weight: 300;
+.footer-contenido {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-.column .ct-input {
-    background-color: var(--blanco);
-    border: none;
-    border-bottom: 1px solid var(--negro);
-    outline: none;
-    color: var(--negro);
-    font-family: var(--fuente);
-    font-size: 1rem;
-    padding: .5rem;
-    font-weight: 300;
+/* Servicios */
+.card {
+  border: none;
+  border-radius: 0;
 }
 
-.column .textarea {
-    background-color: var(--blanco);
-    color: var(--negro);
-    border: none;
-    outline: none;
-    resize: none;
-    border-bottom: 1px solid var(--negro); 
-    font-size: 1rem;   
-    font-family: var(--fuente);
-    font-weight: 300;
-} 
-
-.column .contacto__btn {
-    background-color: var(--negro);
-    color: var(--blanco);
-    padding: .5rem;
-    margin-top: 1.5rem;
-    font-weight: 400;
-    font-family: var(--fuente);
+.card-img-top {
+  border-radius: 0;
 }
 
-@media (min-width:769px){ 
+.bg-card {
+  background-color: var(--blanco);
+}
 
-    .contacto {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        margin: 0 auto;
-    }   
+.galeria {
+  grid-template-columns: 1fr;
+  grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6";
+}
 
-    .contacto__texto {
-        color: var(--negro);
-        width: 50%;
-    }
-    
-    .contacto__form {
-        width:50% ;
-        margin-left: 5rem;
-    }
-    
-    .contacto__form__flex {
-        display: flex; 
-        column-gap: 1.5rem; 
-    }
-       
-    .mitad {
-        width: 50%;
-    }
-}  
+.galeria_imagenes::before {
+  font-size: 1rem;
+}
 
-/* Galerias */
+.galeria_imagenes {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
 
-.galeriaGral{
-    padding-bottom : 3em;
+.galeria_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img1 {
+  grid-area: img1;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+.img4 {
+  grid-area: img4;
+}
+
+.img5 {
+  grid-area: img5;
+}
+
+.img6 {
+  grid-area: img6;
+}
+
+@media (min-width: 768px) {
+  .galeria {
+    padding-bottom: 3em;
     padding-top: 1em;
-    display:grid;
-    grid-template-columns: repeat(3 , 1fr);
-    grid-auto-rows: 500px;
-    grid-template-areas: 
-    'img1 img2 img3'
-    'img4 img5 img6';    
-    gap : 0.8em;
-} 
-
-.bg-servicios {
-    background-color: var(--gris);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px;
+    grid-template-areas: "img1 img2 img3" "img4 img5 img6";
+    gap: 0.8em;
+  }
+  .galeria_imagenes::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(158, 158, 158, 0.6509803922);
+    transform: scaleY(0);
+    transition: transform 0.4s;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  .galeria_imagenes:hover::before {
+    transform: scaleY(1);
+  }
+  .cocina.galeria_imagenes::before {
+    content: "cocina";
+  }
+  .baños.galeria_imagenes::before {
+    content: "Baños";
+  }
+  .interiores.galeria_imagenes::before {
+    content: "Interiores";
+  }
+  .ampliaciones.galeria_imagenes::before {
+    content: "Ampliaciones";
+  }
+  .exteriores.galeria_imagenes::before {
+    content: "Exteriores";
+  }
+  .terrazas.galeria_imagenes::before {
+    content: "Terrazas";
+  }
 }
+.contacto-bg {
+  background-color: #f5f5f5;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+.contacto h2 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+.contacto p {
+  margin-bottom: 2rem;
+}
+.contacto .contacto__texto h2,
+.contacto .contacto__texto p {
+  color: #222121;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.column .label {
+  color: #222121;
+  font-weight: 300;
+}
+.column .ct-input {
+  background-color: #f5f5f5;
+  border: none;
+  border-bottom: 1px solid #222121;
+  outline: none;
+  color: #222121;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem;
+  font-weight: 300;
+}
+.column .textarea {
+  background-color: #f5f5f5;
+  color: #222121;
+  border: none;
+  outline: none;
+  resize: none;
+  border-bottom: 1px solid #222121;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.column .contacto__btn {
+  background-color: #222121;
+  color: #f5f5f5;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 769px) {
+  .contacto {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contacto .contacto__texto {
+    color: #222121;
+    width: 50%;
+  }
+  .contacto .contacto__form {
+    width: 50%;
+    margin-left: 5rem;
+  }
+  .contacto .contacto__form .contacto__form__flex {
+    display: flex;
+    column-gap: 1.5rem;
+  }
+  .mitad {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

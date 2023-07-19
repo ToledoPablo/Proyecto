@@ -1,0 +1,304 @@
+/* Titulo */
+
+.titulo {
+    height: 50vh;
+    background-image: url(../assets/img/main_640.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 3rem;
+
+    h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+    }
+
+    .titulo__contenido {
+        position: absolute;
+        background-color: rgba(0,0,0,.3);
+        width: 100%;
+        height: 100%;
+        color: $blanco;
+        text-align: center;
+        line-height: 4.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        
+        span {
+            text-decoration: none;
+            color: $negro;
+            background-color: $blanco;
+            padding: 0.7rem 1rem;
+        }   
+    }
+}
+
+@media screen and ( min-width:769px )  {
+    .titulo {
+        height: 90vh;
+        background-image: url(../assets/img/main_1920.jpg);
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        .titulo__contenido {
+            align-items: flex-start;
+            text-align: start;
+            padding-left: 3rem;
+        }
+    }
+}
+
+/* Lider */
+
+.boton {
+    background-color: $negro;
+    color: $blanco;
+    padding: 0.7rem 1rem;
+}
+
+@media screen and ( min-width: 769px) {
+
+    .img-wd {
+        order: -1;
+    }
+
+    .boton:hover {
+        background-color: $marron;
+        transition: 400ms;
+    }
+}
+
+/* Eleccion */
+
+.color-h3 {
+    color: $marron;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 769px) {
+    .eleccion {
+        margin-bottom: 3rem;
+
+        h2 {
+            margin-bottom: 4rem;
+        }
+
+        h3 {
+        margin-bottom: 3rem;
+        }
+    }
+}
+
+/* Servicios */ 
+
+.servicios__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    .servicios__flex__contenedor {
+        height: 30vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem;
+
+        a {
+            text-decoration: none;
+            color: $blanco;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .servicios__flex__contenedor__anclas {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(0, 0, 0, .4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.cocina {
+    background-image: url(../assets/img/cocina1_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bath {
+    background-image: url(../assets/img/baño_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.interiores {
+    background-image: url(../assets/img/interiores_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.servicios__btn a {
+    @extend .boton;
+    color: $blanco;
+    background-color: $negro;
+}
+
+@media screen and (min-width:769px){ 
+
+    .servicios__flex {
+        flex-direction: row;
+        margin-bottom:4rem;
+
+        .servicios__flex__contenedor {
+            height: 70vh;
+            margin: 0.2rem;
+        }
+    }
+
+    .cocina {
+        background-image: url(../assets/img/cocina1_1920.jpg);
+    }
+
+    .bath {
+        background-image: url(../assets/img/baño_1920.jpg);
+    }
+
+    .interiores {
+        background-image: url(../assets/img/interiores_1920.jpg);
+    }
+
+    .servicios__btn {
+        a:hover {
+            background-color: $marron;
+            transition: 400ms;
+        }
+    } 
+}
+
+/* Clientes */
+
+.nombreCliente {
+    color: $marron;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/*Formulario */
+
+.form_bg {
+    background-color: $negro;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin:0 auto;
+
+    h2 {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    .formulario__texto h2, .formulario__texto p {
+        color: $blanco;
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        background-color: $negro;
+        border: none;
+        border-bottom: 1px solid $blanco;
+        outline: none;
+        color: $blanco;
+        font-family: $fuente;
+        font-size: 1rem;
+        padding: .5rem;
+        font-weight: 300;
+    }
+
+    textarea {
+        background-color: $negro;
+        color: $blanco;
+        border: none;
+        outline: none;
+        resize: none;
+        border-bottom: 1px solid $blanco; 
+        font-size: 1rem;   
+        font-family: $fuente;
+        font-weight: 300;
+    }
+
+    .enviar__btn {
+        background-color: $blanco;
+        color: $negro;
+        padding: .5rem;
+        margin-top: 1.5rem;
+        font-weight: 400;
+        font-family: $fuente;
+    }
+}
+
+.lb-index {
+    color: $blanco;
+    font-weight: 100;
+}
+
+@media (min-width:769px){ 
+
+    .formulario {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+
+        .formulario__texto {
+            color: $blanco;
+            width: 50%;
+        }
+
+        .formulario__form {
+            width:50% ;
+            margin-left: 5rem;
+
+            .formulario__form__flex {
+                display: flex; 
+                column-gap: 1.5rem; 
+            }
+        }
+    }    
+      
+    .mitad {
+        width: 50%;
+    }
+}  

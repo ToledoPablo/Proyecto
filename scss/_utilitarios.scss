@@ -1,0 +1,44 @@
+
+
+
+.bg {
+    background-color: $gris;
+}
+
+.centrado {
+    margin: 0 auto;
+}
+
+/* BANNER */
+
+.banner {
+    background-color: $negro;
+    color: $blanco;
+}
+
+.banner__contenido {
+    margin: 0 auto;
+    height: 30vh;
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    a {
+        @extend .boton;
+        color: $negro;
+        background-color: $blanco;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .banner__contenido {
+        h2 {
+            font-size: 2rem;
+        }
+    } 
+}
+
+.bg-servicios {
+    background-color: var(--gris);
+}

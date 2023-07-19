@@ -1,0 +1,9 @@
+@import 'mixin.scss';
+
+.footer {
+    @include display-flex(column)
+}
+
+.footer-contenido {
+    @include d-flex-gap (row, 1.5rem)
+}

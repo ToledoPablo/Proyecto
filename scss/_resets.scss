@@ -1,0 +1,20 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $blanco;
+    font-family: $fuente;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 600; 
+    margin-bottom: 2rem;
+}
+a {
+    text-decoration: none;
+    color: $negro;
+}
