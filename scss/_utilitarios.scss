@@ -9,6 +9,13 @@
     margin: 0 auto;
 }
 
+.boton {
+    background-color: $negro;
+    color: $blanco;
+    padding: 0.7rem 1rem;
+}
+
+
 /* BANNER */
 
 .banner {
@@ -24,11 +31,13 @@
         font-size: 1.5rem;
     }
 
-    a {
+    .banner-btn {
         @extend .boton;
         color: $negro;
         background-color: $blanco;
     }
+
+
 }
 
 @media screen and (min-width: 769px) {
@@ -39,6 +48,3 @@
     } 
 }
 
-.bg-servicios {
-    background-color: var(--gris);
-}

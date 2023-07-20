@@ -56,19 +56,16 @@
 
 /* Lider */
 
-.boton {
-    background-color: $negro;
-    color: $blanco;
-    padding: 0.7rem 1rem;
+.lider-btn {
+    @extend .boton;
 }
-
 @media screen and ( min-width: 769px) {
 
     .img-wd {
         order: -1;
     }
 
-    .boton:hover {
+    .lider-btn:hover {
         background-color: $marron;
         transition: 400ms;
     }
