@@ -299,3 +299,258 @@
         width: 50%;
     }
 }  
+
+
+
+
+/* Trabajos */
+
+
+
+.galeria{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'img1'
+    'img2'
+    'img3'
+    'img4'
+    'img5'
+    'img6';    
+}
+.galeria_imagenes::before{
+    font-size: 1rem;
+}
+
+.galeria_imagenes{
+    position:relative;
+    cursor:pointer;
+    overflow: hidden;
+}
+
+.galeria_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img1 {
+    grid-area: img1;
+}
+.img2 {
+    grid-area: img2;
+}
+.img3 {
+    grid-area: img3;
+}
+.img4 {
+    grid-area: img4;
+}
+.img5 {
+    grid-area: img5;
+}
+.img6 {
+    grid-area: img6;
+}
+
+@media (min-width:768px){
+    .galeria{
+        padding-bottom : 3em;
+        padding-top: 1em;
+        display:grid;
+        grid-template-columns: repeat(3 , 1fr);
+        grid-auto-rows: 400px;
+        grid-template-areas: 
+        'img1 img2 img3'
+        'img4 img5 img6';    
+        gap : 0.8em;
+    }     
+
+    .galeria_imagenes::before{
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background-color: $grisDos;
+        transform: scaleY(0);
+        transition: transform .4s;
+        color:white;
+        display:flex;
+        justify-content: center;
+        align-items:center ;
+        font-size:1.5rem ;    
+    }
+    
+    .galeria_imagenes:hover::before{
+        transform: scaleY(1);
+    }
+    
+    .cocina.galeria_imagenes::before{
+        content: "cocina";
+    }
+    .baños.galeria_imagenes::before {
+        content: "Baños";
+    }
+    
+    .interiores.galeria_imagenes::before {
+        content: "Interiores"
+    }
+    
+    .ampliaciones.galeria_imagenes::before{
+        content:"Ampliaciones";
+    }
+    
+    .exteriores.galeria_imagenes::before {
+        content: "Exteriores";
+    }
+    
+    .terrazas.galeria_imagenes::before {
+        content: "Terrazas";
+    }
+}
+
+/* Servicios */
+
+.card {
+    border: none;
+    border-radius: 0;
+}
+
+.card-img-top {
+    border-radius: 0;
+}
+
+.bg-card {
+    background-color: var(--blanco);
+}
+
+.zoom {
+    transition: transform 0.9s ease, opacity 0.9s ease;
+}
+
+.zoom:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.8;
+}
+
+
+/* Galerias */
+
+.galeriaGral{
+    padding-bottom : 3em;
+    padding-top: 1em;
+    display:grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-auto-rows: 500px;
+    grid-template-areas: 
+    'img1 img2 img3'
+    'img4 img5 img6';    
+    gap : 0.8em;
+} 
+
+
+/* Contacto */ 
+
+
+.contacto-bg {
+    background-color: $blanco;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin:0 auto;
+
+    h2 {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    .contacto__texto h2, 
+    .contacto__texto p {
+        color: $negro;
+    }
+
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+
+    .label {
+    color: $negro;
+    font-weight: 300;
+    }
+
+    .ct-input {
+        background-color: $blanco;
+        border: none;
+        border-bottom: 1px solid $negro;
+        outline: none;
+        color: $negro;
+        font-family: $fuente;
+        font-size: 1rem;
+        padding: .5rem;
+        font-weight: 300;
+    }
+
+    .textarea {
+        background-color: $blanco;
+        color: $negro;
+        border: none;
+        outline: none;
+        resize: none;
+        border-bottom: 1px solid $negro; 
+        font-size: 1rem;   
+        font-family: $fuente;
+        font-weight: 300;
+    } 
+
+    .contacto__btn {
+        background-color: $negro;
+        color: $blanco;
+        padding: .5rem;
+        margin-top: 1.5rem;
+        font-weight: 400;
+        font-family: $fuente;
+    }
+}
+
+@media (min-width:769px){ 
+
+    .contacto {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+
+        .contacto__texto {
+            color: $negro;
+            width: 50%;
+        }
+
+        .contacto__form {
+            width:50% ;
+            margin-left: 5rem;
+
+            .contacto__form__flex {
+                display: flex; 
+                column-gap: 1.5rem; 
+            }
+        }
+    }       
+    
+    .mitad {
+        width: 50%;
+    }
+}  
