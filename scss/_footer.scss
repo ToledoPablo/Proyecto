@@ -9,7 +9,19 @@
 }
 
 
-.logo-footer:hover {
+/*.logo-footer:hover {
     transform: rotate(-30deg);
     transition: transform 0.5s ease;
 }
+*/
+
+.logo-footer:hover {
+    animation-name: logo;
+    animation-duration: .4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: 3s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }

@@ -1,5 +1,11 @@
 
-
+@keyframes logo{
+    0%, 100% {
+    }
+    50% {
+      transform: skew(-50deg, 5deg);
+    }
+  }
 
 .bg {
     background-color: $gris;

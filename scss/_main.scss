@@ -58,6 +58,7 @@
 
 .lider-btn {
     @extend .boton;
+    transition: ease-out 0.4s;
 }
 @media screen and ( min-width: 769px) {
 
@@ -66,8 +67,7 @@
     }
 
     .lider-btn:hover {
-        background-color: $marron;
-        transition: 400ms;
+        box-shadow: inset 0 0 0 50px $marron;
     }
 }
 
@@ -157,6 +157,7 @@
     @extend .boton;
     color: $blanco;
     background-color: $negro;
+    transition: ease-out 0.4s;
 }
 
 @media screen and (min-width:769px){ 
@@ -185,8 +186,7 @@
 
     .servicios__btn {
         a:hover {
-            background-color: $marron;
-            transition: 400ms;
+            box-shadow: inset 0 0 0 50px $marron;
         }
     } 
 }
