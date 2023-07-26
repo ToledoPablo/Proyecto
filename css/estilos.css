@@ -64,6 +64,15 @@ a {
     font-size: 2rem;
   }
 }
+.resaltado {
+  color: #a26028;
+  font-weight: 600;
+}
+
+.marca {
+  font-weight: 600;
+}
+
 .sticky {
   position: sticky;
   top: 0;
@@ -333,6 +342,33 @@ a {
   }
   .mitad {
     width: 50%;
+  }
+}
+/* Acerca de */
+.acerca-h {
+  height: 50vh;
+  background-image: url(../assets/img/cocina_6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.titulo-acerca {
+  text-transform: uppercase;
+  padding-top: 2rem;
+  font-size: 40px;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-shadow: 3px 3px #222121;
+}
+
+@media screen and (min-width: 769px) {
+  .acerca-h {
+    height: 90vh;
+  }
+  .titulo-acerca {
+    padding-top: 5rem;
+    font-size: 100px;
   }
 }
 /* Trabajos */

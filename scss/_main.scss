@@ -299,14 +299,37 @@
         width: 50%;
     }
 }  
+/* Acerca de */
+.acerca-h {
+    height: 50vh;
+    background-image: url(../assets/img/cocina_6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
+.titulo-acerca {
+    text-transform: uppercase;
+    padding-top: 2rem;
+    font-size:40px;
+    font-weight: 700;
+    color: $blanco;    
+    text-shadow: 3px 3px $negro;
+}
 
+@media screen and (min-width: 769px) {
 
+.acerca-h {
+    height: 90vh;
+}
 
+    .titulo-acerca {
+        padding-top: 5rem;
+        font-size: 100px;
+}
+
+}
 /* Trabajos */
-
-
-
 .galeria{
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -427,7 +450,6 @@
 .zoom {
     transition: transform 0.9s ease, opacity 0.9s ease;
 }
-
 .zoom:hover {
     transform: scale(1.01);
     transition: transform 0.3s ease, opacity 0.3s ease;
