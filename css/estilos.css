@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+/* Mapa */
 * {
   margin: 0;
   padding: 0;
@@ -404,11 +405,15 @@ a {
     height: 90vh;
     background-image: url(../assets/img/cocina_6_g.webp);
   }
-  .titulo-acerca {
+  .acerca-h .titulo-acerca {
     padding-top: 5rem;
     font-size: 100px;
   }
 }
+.margin {
+  margin-bottom: 7rem;
+}
+
 /* Trabajos */
 .galeria {
   grid-template-columns: 1fr;

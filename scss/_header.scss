@@ -20,7 +20,7 @@
 }
 .navbar-nav .nav-item .nav-link.active {
     color: $marron;
-    font-weight: 700;
+    font-weight: map-get($grosor , bold );
 }
 .navbar-nav .nav-item a {
     color: #222121;

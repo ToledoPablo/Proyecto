@@ -237,7 +237,7 @@
         font-family: $fuente;
         font-size: 1rem;
         padding: .5rem;
-        font-weight: 300;
+        font-weight: map-get($grosor , light );
     }
 
     textarea {
@@ -249,7 +249,7 @@
         border-bottom: 1px solid $blanco; 
         font-size: 1rem;   
         font-family: $fuente;
-        font-weight: 300;
+        font-weight: map-get($grosor , light );
     }
 
     .enviar__btn {
@@ -257,7 +257,7 @@
         color: $negro;
         padding: .5rem;
         margin-top: 1.5rem;
-        font-weight: 400;
+        font-weight: map-get($grosor , regular);
         font-family: $fuente;
         border: none;
         transition: ease-out 0.4s;
@@ -266,7 +266,7 @@
 
 .lb-index {
     color: $blanco;
-    font-weight: 100;
+    font-weight: map-get($grosor , thin);
 }
 
 @media (min-width:769px){ 
@@ -308,29 +308,31 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
 }
 
 .titulo-acerca {
     text-transform: uppercase;
     padding-top: 2rem;
     font-size:40px;
-    font-weight: 700;
+    font-weight: map-get($grosor , bold);
     color: #fff;    
     text-shadow: 6px 6px $negro;
 }
 
 @media screen and (min-width: 769px) {
+    .acerca-h {
+        height: 90vh;
+        background-image: url(../assets/img/cocina_6_g.webp);
 
-.acerca-h {
-    height: 90vh;
-    background-image: url(../assets/img/cocina_6_g.webp);
+        .titulo-acerca {
+            padding-top: 5rem;
+            font-size: 100px;
+        }
+    } 
 }
-
-    .titulo-acerca {
-        padding-top: 5rem;
-        font-size: 100px;
-}
-
+.margin {
+    margin-bottom: 7rem;
 }
 /* Trabajos */
 .galeria{
@@ -513,7 +515,7 @@
 
     .label {
     color: $negro;
-    font-weight: 300;
+    font-weight: map-get($grosor , light);
     }
 
     .ct-input {
@@ -525,7 +527,7 @@
         font-family: $fuente;
         font-size: 1rem;
         padding: .5rem;
-        font-weight: 300;
+        font-weight: map-get($grosor , light);
     }
 
     .textarea {
@@ -537,7 +539,7 @@
         border-bottom: 1px solid $negro; 
         font-size: 1rem;   
         font-family: $fuente;
-        font-weight: 300;
+        font-weight: map-get($grosor, light );
     } 
 
     .contacto__btn {
@@ -545,7 +547,7 @@
         color: $blanco;
         padding: .5rem;
         margin-top: 1.5rem;
-        font-weight: 400;
+        font-weight: map-get($grosor , regular );
         font-family: $fuente;
         transition: ease-out 0.4s;
     }
