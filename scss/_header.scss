@@ -13,3 +13,33 @@
     margin-left: .2rem;
     }
 }
+
+.navbar-nav .nav-item .nav-link {
+    padding: 0;
+    margin-left: 2rem;
+}
+.navbar-nav .nav-item .nav-link.active {
+    color: $marron;
+    font-weight: 700;
+}
+.navbar-nav .nav-item a {
+    color: #222121;
+    position: relative;
+    transition: 0.3s ease;
+    padding: 0;
+  }
+  
+  .navbar-nav .nav-item a:before {
+    content: "";
+    position: absolute;
+    background-color: #222121;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+  }
+  
+  .navbar-nav .nav-item a:hover:before {
+    width: 100%;
+  }
